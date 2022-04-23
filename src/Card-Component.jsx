@@ -14,7 +14,7 @@ const CartComponent = (props) => {
     );
   };
   const letterObj = flipCard.find((obj) => obj.letter === props.ltr);
-  // console.log("letter obj of ", props.ltr, " is ", letterObj);
+  
 
   return (
     <div onClick={() => clickHandler()}>
