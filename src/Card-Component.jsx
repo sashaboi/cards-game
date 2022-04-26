@@ -17,11 +17,11 @@ const CartComponent = (props) => {
   
 
   return (
-    <div onClick={() => clickHandler()}>
-      <button className={`card-component-btn ${letterObj.solved&&"solved"}`} disabled={letterObj.solved || letterObj.clicked}>
+    
+      <button onClick={() => clickHandler()} className={`card-component-btn `} disabled={letterObj.solved || letterObj.clicked}>
         {letterObj.tempshow ? <div className="solved-item">{props.ltr.toUpperCase()}</div> : <div className="question-icon"><BsFillQuestionCircleFill/></div>}
       </button>
-    </div>
+    
   );
 };
 
