@@ -1,6 +1,6 @@
 import "./styles.css";
 import { v4 as uuid } from "uuid";
-import CartComponent from "./Card-Component";
+import CardComponent from "./Card-Component";
 import { UseGame } from "./game-context";
 import Navbar from "./Navbar";
 export default function App() {
@@ -12,9 +12,9 @@ export default function App() {
       <h1>Card Game !</h1>
       <p>turns done: {turnCounter}</p>
       <div className="four-grid">
-        {flipCard.map((letter) => (
+        {flipCard.map((cardObj) => (
           <div key={uuid()}>
-            <CartComponent ltr={letter.letter} />
+            <CardComponent ltr={cardObj.letter} />
           </div>
         ))}
       </div>

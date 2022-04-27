@@ -4,7 +4,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "a",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -12,7 +12,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "A",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -20,7 +20,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "b",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -28,7 +28,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "B",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -36,7 +36,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "c",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -44,7 +44,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "C",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -52,7 +52,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "d",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -60,7 +60,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "D",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -68,7 +68,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "e",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -76,7 +76,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "E",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -84,7 +84,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "f",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -92,7 +92,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "F",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -100,7 +100,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "g",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -108,7 +108,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "G",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -116,7 +116,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "h",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false
@@ -124,7 +124,7 @@ export const dataarray = [
   {
     id: uuid(),
     letter: "H",
-    tempshow: false,
+    tempShow: false,
     solved: false,
     clicked: false,
     ban: false

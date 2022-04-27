@@ -1,25 +1,25 @@
 import { UseGame } from "./game-context";
 
 import {BsFillQuestionCircleFill} from 'react-icons/bs';
-const CartComponent = (props) => {
+const CartComponent = ({ltr}) => {
   const { flipCard, setFlipCard, setTwoCounter } = UseGame();
-  const clickHandler = () => {
+  const cardClickHandler = () => {
     setTwoCounter((twoCounter) => twoCounter + 1);
     setFlipCard(
       flipCard.map((obj) =>
-        obj.letter === props.ltr
-          ? { ...obj, tempshow: !obj.tempshow, clicked: !obj.clicked }
+        obj.letter === ltr
+          ? { ...obj, tempShow: !obj.tempShow, clicked: !obj.clicked }
           : { ...obj }
       )
     );
   };
-  const letterObj = flipCard.find((obj) => obj.letter === props.ltr);
+  const letterObj = flipCard.find((obj) => obj.letter === ltr);
   
 
   return (
     
-      <button onClick={() => clickHandler()} className={`card-component-btn `} disabled={letterObj.solved || letterObj.clicked}>
-        {letterObj.tempshow ? <div className="solved-item">{props.ltr.toUpperCase()}</div> : <div className="question-icon"><BsFillQuestionCircleFill/></div>}
+      <button onClick={() => cardClickHandler()} className="card-component-btn" disabled={letterObj.solved || letterObj.clicked}>
+        {letterObj.tempShow ? <div className="solved-item">{ltr.toUpperCase()}</div> : <div className="question-icon"><BsFillQuestionCircleFill/></div>}
       </button>
     
   );
