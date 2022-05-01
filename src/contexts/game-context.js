@@ -1,5 +1,5 @@
 import { useContext, createContext, useState, useEffect } from "react";
-import { dataarray } from "./dataarray";
+import { dataarray } from "../assets/data/CardGame/dataarray";
 const gameContext = createContext();
 // dataarray.sort(() => Math.random() - 0.5);
 const GameProvider = ({ children }) => {
@@ -60,7 +60,7 @@ const GameProvider = ({ children }) => {
   useEffect(() => {
     let winnercount = 0;
     flipCard.map((obj) => obj.solved && winnercount++);
-    console.log(winnercount);
+    
     winnercount > 15 && setStatus("You have won, congrats!");
   }, [flipCard]);
   return (

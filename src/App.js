@@ -1,24 +1,30 @@
-import "./styles.css";
-import { v4 as uuid } from "uuid";
-import CardComponent from "./Card-Component";
-import { UseGame } from "./game-context";
-import Navbar from "./Navbar";
-export default function App() {
-  const { status, flipCard, turnCounter } = UseGame();
+import { Routes,Route } from "react-router-dom";
 
+import HomePage from './pages/HomePage/HomePage'
+import Rules from './pages/Rules/Rules'
+import Aboutme from './pages/AboutMe/AboutMe'
+import Leaderboard from "./pages/Leaderboard/Leaderboard";
+import GamePage from "./pages/GamePage/GamePage";
+import LostPage from "./pages/LostPage/LostPage";
+
+import "./styles.css";
+
+export default function App() {
+
+  
+  
   return (
-    <div className="App">
-      <Navbar/>
-      <h1>Card Game !</h1>
-      <p>turns done: {turnCounter}</p>
-      <div className="four-grid">
-        {flipCard.map((cardObj) => (
-          <div key={uuid()}>
-            <CardComponent ltr={cardObj.letter} />
-          </div>
-        ))}
-      </div>
-      <div>{status}</div>
+    <div className="App"> 
+      
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/rules" element={<Rules/>}/>
+        <Route path="/aboutme" element={<Aboutme/>}/>
+        <Route path="/leaderboard" element={<Leaderboard/>}/>
+        <Route path="/gamepage" element={<GamePage/>}/>
+        <Route path="*" element={<LostPage/>}/>
+
+      </Routes>
     </div>
   );
 }
