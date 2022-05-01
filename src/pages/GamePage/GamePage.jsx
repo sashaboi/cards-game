@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from "react";
 
 import { v4 as uuid } from "uuid";
-import { useQuery ,gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 
 import { UseGame } from '../../contexts/game-context';
 import { LOAD_LEADERBOARD } from '../../GraphQl/Queries';
@@ -10,7 +10,7 @@ import { LOAD_LEADERBOARD } from '../../GraphQl/Queries';
 import CardComponent from '../../components/Card-Component';
 const GamePage = () => {
     const { status, flipCard, turnCounter } = UseGame();
-  const {error,loading,data}=useQuery(LOAD_LEADERBOARD)
+  const {data}=useQuery(LOAD_LEADERBOARD)
 
   useEffect(()=>{
     console.log('data from api',data)
