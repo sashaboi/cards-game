@@ -1,30 +1,103 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: turquoise;
+}
+.game-container{
+  width: 80vw;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .four-grid {
   display: grid;
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  width: 50vw;
+  width: 60vw;
   height: 50vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
 .card-component-btn{
-  padding: 2rem;
+  height: 10vh;
+  width: 10vh;
+  padding: 1rem;
   font-size: 2rem;
-  background-color: #4d1635;
+  background-color: rgb(255, 104, 104);
   color: white;
   border-radius: 1rem;
   border: none;
+  transition: 0.05s;
   
 }
-
-
+.card-component-btn:hover{
+  transform: scale(1.08);
+  background-color:#fc6601;
+  cursor: pointer;
+}
+.true:hover{
+  transform: none;
+}
 .question-icon{
   font-size: 2.2rem;
 }
-.solved{
-  background-color:#9e9199 ;
+.clicked{
+  background-color: #9e9199;
 }
-/* dark blue: #112432 | light blue grey: #5e7783 | purple: #4d1635 | grey purple: #9e9199 | Soft Grey: #d0d1d3 */
+.true{
+  background-color:#ef955d ;
+}
+.main-heading{
+  font-size: 2rem;
+  font-weight:800;
+  color: white;
+  padding: 1rem;
+}
+.game-status{
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color:#fc6601;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+
+}
+.turns-counter{
+  padding: 0.8rem;
+  text-transform: uppercase;
+  background-color:#ef955d;
+  color: white;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  width: 30vw;
+}
+.turns-counter span{
+  background-color: #fc6601;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  
+  font-size: 2rem;
+
+
+}
+/* bg color
+card default color
+card on hover color
+card flip color
+card solved color
+text / modal color */
